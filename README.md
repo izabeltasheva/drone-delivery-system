@@ -1,6 +1,6 @@
-Name: Izabel Tasheva
-Email: izabel.tasheva21@gmail.com
-LinkedIn: https://www.linkedin.com/in/izabel-tasheva-3bb5352b0/
+- Name: Izabel Tasheva
+- Email: izabel.tasheva21@gmail.com
+- LinkedIn: https://www.linkedin.com/in/izabel-tasheva-3bb5352b0/
 
 
 ### Task definition: [readme](./.docs/task-definition.md)
