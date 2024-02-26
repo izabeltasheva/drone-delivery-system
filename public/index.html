@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Order Submission</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Include a CSS file for styling -->
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+  <div class="transparent-box">
+    <div class="flex-container">
+      <div class="main-content">
+        <h2>What’s on your menu today?</h2>
+        <h3>
+          Skip the lines, not the quality - groceries delivered to your
+          doorstep.
+        </h3>
+        <div id="connectionStatus">Connecting to server...</div>
+        <form id="orderForm">
+          <h3>Make an order</h3>
+          customer ID: <br />
+          <input type="text" id="customerId" placeholder="e.g., 1, 2, 3" /><br />
+          <p></p>
+          products on your list:<br />
+          <input type="text" id="products" placeholder="e.g., tomatoes:5, eggs:10" required /><br />
+          <p></p>
+          <button type="submit">submit your order</button>
+          <br />
+          <br />
+          <div class="switch-container">
+            <span>all orders status</span>
+            <label class="switch">
+              <input type="checkbox" id="toggleSwitch" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div id="statusBox">Order status will appear here.</div>
+        </form>
+      </div>
+      <div class="order-status">
+        <h2>orders status</h2>
+        <div id="ordersList"></div>
+        <!-- The orders will be displayed here -->
+      </div>
+    </div>
+    <script src="js/client.js"></script>
+  </div>
+
+</body>
+
+</html>
